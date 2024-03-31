@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+    <form method="post" action="{% url 'result' %}">
+        {% csrf_token %}
+        <label for="input1">Enter the model ans url:</label>
+        <input type="text" name="input1" id="input1"><br>
+        <label for="input2">Enter scan url</label>
+        <input type="text" name="input2" id="input2"><br>
+        <label for="input3">Enter diagram image:</label>
+        <input type="text" name="input3" id="input3"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
